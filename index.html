@@ -11,20 +11,38 @@
     }
 
     body {
+      font-family: Arial, sans-serif;
+      color: white;
+      height: 200%; /* To allow scrolling */
       background-image: url('https://th.bing.com/th/id/OIP.z2mHHugIM2pm3rucBvu89gHaD8?cb=iwp1&rs=1&pid=ImgDetMain');
       background-size: cover;
       background-position: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .welcome-message {
+      font-size: 36px;
+      margin-top: 50px;
+      text-align: center;
       color: white;
-      position: relative;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .scrollable-content {
+      margin-top: 100px;
+      width: 100%;
+      height: 100vh; /* Full height for the video */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .video-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: relative;
       width: 80%;
       max-width: 800px;
     }
@@ -68,14 +86,25 @@
 </head>
 <body>
 
-  <a href="page1.html" class="button" id="btn1">enter text here</a>
-  <a href="page2.html" class="button" id="btn2">enter text here</a>
-
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
+  <!-- Welcome message that appears at the start -->
+  <div class="welcome-message">
+    Welcome! Scroll down to view the video.
   </div>
 
-  <div class="below-text">enter text here</div>
+  <!-- Scrollable content -->
+  <div class="scrollable-content">
+    <!-- Video Section -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
+    </div>
+
+    <!-- Buttons -->
+    <a href="page1.html" class="button" id="btn1">enter text here</a>
+    <a href="page2.html" class="button" id="btn2">enter text here</a>
+
+    <!-- Additional text below the video -->
+    <div class="below-text">enter text here</div>
+  </div>
 
 </body>
 </html>
