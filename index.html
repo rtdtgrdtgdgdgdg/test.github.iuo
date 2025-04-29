@@ -4,47 +4,28 @@
   <meta charset="UTF-8">
   <title>My Web Page</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
       font-family: Arial, sans-serif;
       color: white;
-      height: 200%; /* To allow scrolling */
-      background-image: url('https://th.bing.com/th/id/OIP.z2mHHugIM2pm3rucBvu89gHaD8?cb=iwp1&rs=1&pid=ImgDetMain');
+      background-image: url('360_F_366593980_vtwrIhBMTRUTAzn2SEKDEFNSMAEeoBOZ.png');
       background-size: cover;
       background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
+      height: 300vh; /* Tall scrollable page */
     }
 
-    .welcome-message {
-      font-size: 36px;
-      margin-top: 50px;
+    .welcome {
+      font-size: 80px;
       text-align: center;
-      color: white;
+      margin-top: 100px;
       text-shadow: 2px 2px 5px black;
     }
 
-    .scrollable-content {
-      margin-top: 100px;
-      width: 100%;
-      height: 100vh; /* Full height for the video */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
     .video-container {
-      position: relative;
       width: 80%;
       max-width: 800px;
+      margin: 200px auto 0 auto; /* push video down the page */
     }
 
     iframe {
@@ -53,57 +34,49 @@
       border: none;
     }
 
-    .button {
-      position: absolute;
+    .buttons-left {
+      position: fixed;
       top: 20px;
-      padding: 10px 20px;
-      background: purple; /* Updated button color */
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 14px;
-      text-decoration: none;
-    }
-
-    #btn1 {
       left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    #btn2 {
-      right: 20px;
-    }
-
-    .below-text {
-      text-align: center;
-      position: absolute;
-      top: calc(50% + 250px);
-      width: 100%;
-      font-size: 20px;
+    .buttons-left a {
       color: white;
-      text-shadow: 1px 1px 2px black;
+      font-size: 16px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .scroll-section {
+      margin-top: 300px;
+      text-align: center;
+      font-size: 24px;
+      text-shadow: 1px 1px 3px black;
     }
   </style>
 </head>
 <body>
 
-  <!-- Welcome message that appears at the start -->
-  <div class="welcome-message">
-    Welcome! Scroll down to view the video.
+  <!-- Left-side text buttons -->
+  <div class="buttons-left">
+    <a href="page1.html">enter text here</a>
+    <a href="page2.html">enter text here</a>
   </div>
 
-  <!-- Scrollable content -->
-  <div class="scrollable-content">
-    <!-- Video Section -->
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
-    </div>
+  <!-- Welcome text -->
+  <div class="welcome">Welcome!</div>
 
-    <!-- Buttons -->
-    <a href="page1.html" class="button" id="btn1">enter text here</a>
-    <a href="page2.html" class="button" id="btn2">enter text here</a>
+  <!-- Video Section -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
+  </div>
 
-    <!-- Additional text below the video -->
-    <div class="below-text">enter text here</div>
+  <!-- Scroll down content -->
+  <div class="scroll-section">
+    enter text here
   </div>
 
 </body>
