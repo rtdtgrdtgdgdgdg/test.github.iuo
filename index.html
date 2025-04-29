@@ -8,30 +8,11 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      color: white;
-      background-image: url('360_F_366593980_vtwrIhBMTRUTAzn2SEKDEFNSMAEeoBOZ.png');
+      background-image: url('https://cdn.discordapp.com/attachments/1333214925253906445/1366924141923668048/360_F_366593980_vtwrIhBMTRUTAzn2SEKDEFNSMAEeoBOZ.png?ex=6812b6cf&is=6811654f&hm=8a25153534461fa244c215f49695c6f2feca2455eba78615ce3f7536404e8aa6&');
       background-size: cover;
       background-position: center;
-      height: 300vh; /* Tall scrollable page */
-    }
-
-    .welcome {
-      font-size: 80px;
-      text-align: center;
-      margin-top: 100px;
-      text-shadow: 2px 2px 5px black;
-    }
-
-    .video-container {
-      width: 80%;
-      max-width: 800px;
-      margin: 200px auto 0 auto; /* push video down the page */
-    }
-
-    iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
+      background-attachment: fixed;
+      color: white;
     }
 
     .buttons-left {
@@ -41,42 +22,71 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      z-index: 10;
     }
 
     .buttons-left a {
       color: white;
-      font-size: 16px;
+      font-size: 18px;
       text-decoration: underline;
-      cursor: pointer;
     }
 
-    .scroll-section {
-      margin-top: 300px;
+    .welcome {
+      font-size: 100px;
       text-align: center;
-      font-size: 24px;
-      text-shadow: 1px 1px 3px black;
+      margin-top: 150px;
+      text-shadow: 3px 3px 8px black;
+    }
+
+    .spacer {
+      height: 150vh; /* Makes the user scroll way down */
+    }
+
+    .video-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 100px;
+    }
+
+    .video-container {
+      width: 80%;
+      max-width: 800px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+
+    .below-text {
+      margin-top: 20px;
+      font-size: 22px;
+      text-shadow: 1px 1px 4px black;
     }
   </style>
 </head>
 <body>
 
-  <!-- Left-side text buttons -->
+  <!-- Simple text links on the left -->
   <div class="buttons-left">
     <a href="page1.html">enter text here</a>
     <a href="page2.html">enter text here</a>
   </div>
 
-  <!-- Welcome text -->
+  <!-- Welcome header -->
   <div class="welcome">Welcome!</div>
 
-  <!-- Video Section -->
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
-  </div>
+  <!-- Spacer to force scrolling -->
+  <div class="spacer"></div>
 
-  <!-- Scroll down content -->
-  <div class="scroll-section">
-    enter text here
+  <!-- Video section at the bottom -->
+  <div class="video-section">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
+    </div>
+    <div class="below-text">enter text here</div>
   </div>
 
 </body>
