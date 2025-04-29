@@ -44,6 +44,7 @@
       border: none;
       cursor: pointer;
       font-size: 14px;
+      text-decoration: none;
     }
 
     #btn1 {
@@ -51,23 +52,6 @@
     }
 
     #btn2 {
-      right: 20px;
-    }
-
-    .message {
-      display: none;
-      position: absolute;
-      top: 60px;
-      background: rgba(0,0,0,0.7);
-      padding: 10px;
-      font-size: 14px;
-    }
-
-    #msg1 {
-      left: 20px;
-    }
-
-    #msg2 {
       right: 20px;
     }
 
@@ -84,24 +68,14 @@
 </head>
 <body>
 
-  <button class="button" id="btn1" onclick="toggleMessage('msg1')">enter text here</button>
-  <div class="message" id="msg1">enter text here</div>
-
-  <button class="button" id="btn2" onclick="toggleMessage('msg2')">enter text here</button>
-  <div class="message" id="msg2">enter text here</div>
+  <a href="page1.html" class="button" id="btn1">enter text here</a>
+  <a href="page2.html" class="button" id="btn2">enter text here</a>
 
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
   </div>
 
   <div class="below-text">enter text here</div>
-
-  <script>
-    function toggleMessage(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === 'block' ? 'none' : 'block';
-    }
-  </script>
 
 </body>
 </html>
