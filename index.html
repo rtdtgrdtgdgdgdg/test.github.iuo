@@ -26,7 +26,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 30px;
+      padding: 0 40px;
       z-index: 1000;
     }
 
@@ -50,7 +50,8 @@
 
     .nav-links {
       display: flex;
-      gap: 30px;
+      gap: 40px; /* Spaced slightly more from right edge */
+      padding-right: 20px;
     }
 
     .nav-links a {
@@ -61,15 +62,15 @@
     }
 
     .welcome {
-      font-size: 140px;
+      font-size: 160px;
       text-align: center;
-      margin-top: 200px; /* Moved further down */
+      margin-top: 280px; /* More space so it's centered on load */
       color: black;
       text-shadow: 4px 4px 10px white;
     }
 
     .spacer {
-      height: 150vh; /* Scroll down area */
+      height: 150vh;
     }
 
     .video-section {
@@ -111,10 +112,10 @@
     </div>
   </div>
 
-  <!-- Welcome text -->
+  <!-- Welcome heading -->
   <div class="welcome">Welcome!</div>
 
-  <!-- Spacer to push video far down -->
+  <!-- Spacer to force scroll -->
   <div class="spacer"></div>
 
   <!-- Video section -->
