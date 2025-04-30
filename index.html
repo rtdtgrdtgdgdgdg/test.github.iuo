@@ -21,33 +21,55 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 60px;
+      height: 70px;
       background-color: #d8b4f8; /* Light purple */
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
-      padding: 0 20px;
+      padding: 0 30px;
       z-index: 1000;
     }
 
-    .top-bar a {
-      color: black;
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-section img {
+      height: 50px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
       font-size: 16px;
       text-decoration: none;
-      margin-left: 20px;
       font-weight: bold;
     }
 
     .welcome {
-      font-size: 120px;
+      font-size: 140px;
       text-align: center;
-      margin-top: 120px; /* Offset for fixed bar */
+      margin-top: 200px; /* Moved further down */
       color: black;
       text-shadow: 4px 4px 10px white;
     }
 
     .spacer {
-      height: 150vh; /* Push video far down */
+      height: 150vh; /* Scroll down area */
     }
 
     .video-section {
@@ -79,14 +101,20 @@
 
   <!-- Top navigation bar -->
   <div class="top-bar">
-    <a href="page1.html">enter text here</a>
-    <a href="page2.html">enter text here</a>
+    <div class="logo-section">
+      <img src="https://cdn.discordapp.com/attachments/1333214925253906445/1366927727877165206/IMG_1479.png?ex=6812ba26&is=681168a6&hm=ff31bf519517a533151f9412279863c1054ab7f46e8ea24147c0ecb3e12a327d&" alt="Logo">
+      <div class="logo-text">pillow talk</div>
+    </div>
+    <div class="nav-links">
+      <a href="page1.html">enter text here</a>
+      <a href="page2.html">enter text here</a>
+    </div>
   </div>
 
-  <!-- Welcome heading -->
+  <!-- Welcome text -->
   <div class="welcome">Welcome!</div>
 
-  <!-- Spacer to allow scrolling -->
+  <!-- Spacer to push video far down -->
   <div class="spacer"></div>
 
   <!-- Video section -->
