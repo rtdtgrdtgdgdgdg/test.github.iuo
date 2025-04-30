@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <title>My Web Page</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
       background-image: url('https://cdn.discordapp.com/attachments/1333214925253906445/1366924141923668048/360_F_366593980_vtwrIhBMTRUTAzn2SEKDEFNSMAEeoBOZ.png?ex=6812b6cf&is=6811654f&hm=8a25153534461fa244c215f49695c6f2feca2455eba78615ce3f7536404e8aa6&');
       background-size: cover;
@@ -15,14 +16,13 @@
       color: white;
     }
 
-    /* Top bar */
     .top-bar {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 70px;
-      background-color: #d8b4f8; /* Light purple */
+      background-color: #d8b4f8;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -38,7 +38,6 @@
 
     .logo-section img {
       height: 50px;
-      width: auto;
       border-radius: 8px;
     }
 
@@ -50,8 +49,8 @@
 
     .nav-links {
       display: flex;
-      gap: 40px; /* Spaced slightly more from right edge */
-      padding-right: 20px;
+      gap: 25px; /* Less gap so it fits better */
+      margin-right: 10px; /* Pull buttons slightly left */
     }
 
     .nav-links a {
@@ -64,13 +63,15 @@
     .welcome {
       font-size: 160px;
       text-align: center;
-      margin-top: 280px; /* More space so it's centered on load */
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
       color: black;
       text-shadow: 4px 4px 10px white;
     }
 
     .spacer {
-      height: 150vh;
+      height: 150vh; /* Keep scroll effect */
     }
 
     .video-section {
@@ -100,7 +101,7 @@
 </head>
 <body>
 
-  <!-- Top navigation bar -->
+  <!-- Top bar -->
   <div class="top-bar">
     <div class="logo-section">
       <img src="https://cdn.discordapp.com/attachments/1333214925253906445/1366927727877165206/IMG_1479.png?ex=6812ba26&is=681168a6&hm=ff31bf519517a533151f9412279863c1054ab7f46e8ea24147c0ecb3e12a327d&" alt="Logo">
@@ -112,10 +113,10 @@
     </div>
   </div>
 
-  <!-- Welcome heading -->
+  <!-- Welcome text -->
   <div class="welcome">Welcome!</div>
 
-  <!-- Spacer to force scroll -->
+  <!-- Scrollable space -->
   <div class="spacer"></div>
 
   <!-- Video section -->
