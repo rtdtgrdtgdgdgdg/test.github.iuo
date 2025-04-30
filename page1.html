@@ -8,31 +8,89 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      color: white;
-      background-image: url('360_F_366593980_vtwrIhBMTRUTAzn2SEKDEFNSMAEeoBOZ.png');
+      background-image: url('https://cdn.discordapp.com/attachments/1333214925253906445/1366924141923668048/360_F_366593980_vtwrIhBMTRUTAzn2SEKDEFNSMAEeoBOZ.png?ex=6812b6cf&is=6811654f&hm=8a25153534461fa244c215f49695c6f2feca2455eba78615ce3f7536404e8aa6&');
       background-size: cover;
       background-position: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-shadow: 1px 1px 3px black;
+      background-attachment: fixed;
+      color: white;
     }
 
-    a {
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background-color: #d8b4f8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      z-index: 1000;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-section img {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    .logo-text {
       color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      padding-right: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
       font-size: 16px;
-      text-decoration: underline;
-      position: absolute;
-      top: 20px;
-      left: 20px;
+    }
+
+    .content {
+      margin-top: 140px;
+      text-align: center;
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .content h1 {
+      font-size: 60px;
+      color: white;
+    }
+
+    .content p {
+      font-size: 24px;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">Go Back</a>
-  <h1>Welcome to Page 1</h1>
-  <p>enter text here</p>
+
+  <div class="top-bar">
+    <div class="logo-section">
+      <img src="https://cdn.discordapp.com/attachments/1333214925253906445/1366927727877165206/IMG_1479.png?ex=6812ba26&is=681168a6&hm=ff31bf519517a533151f9412279863c1054ab7f46e8ea24147c0ecb3e12a327d&" alt="Logo">
+      <div class="logo-text">pillow talk</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>hi</h1>
+    <p>enter text here</p>
+  </div>
+
 </body>
 </html>
