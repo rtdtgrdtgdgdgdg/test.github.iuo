@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Web Page</title>
+  <title>Home Page</title>
   <style>
     html, body {
       margin: 0;
@@ -16,6 +16,7 @@
       color: white;
     }
 
+    /* Top bar styling */
     .top-bar {
       position: fixed;
       top: 0;
@@ -47,57 +48,43 @@
       font-weight: bold;
     }
 
-    /* Move buttons to the left, but still keep them on the right side */
-    .nav-links {
-      display: flex;
-      gap: 20px;             /* Adjust gap between buttons */
-      margin-right: 100px;   /* Move buttons more to the left */
-    }
-
-    .nav-links a {
+    /* Discord button styling */
+    .discord-button {
       color: white;
-      font-size: 16px;
+      font-size: 18px;
       text-decoration: none;
       font-weight: bold;
     }
 
+    /* Go Back Button */
+    .go-back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #8a6be7;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
     .welcome {
-      font-size: 160px;
+      font-size: 100px;
       text-align: center;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
       color: black;
+      margin-top: 150px;
       text-shadow: 4px 4px 10px white;
     }
 
-    .spacer {
-      height: 150vh; /* Keep scroll effect */
-    }
-
-    .video-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 100px;
-    }
-
-    .video-container {
-      width: 80%;
-      max-width: 800px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
-    }
-
     .below-text {
+      font-size: 30px;
+      text-align: center;
+      color: black;
       margin-top: 20px;
-      font-size: 22px;
-      text-shadow: 1px 1px 4px black;
+      text-shadow: 2px 2px 5px white;
     }
+
   </style>
 </head>
 <body>
@@ -108,25 +95,19 @@
       <img src="https://cdn.discordapp.com/attachments/1333214925253906445/1366927727877165206/IMG_1479.png?ex=6812ba26&is=681168a6&hm=ff31bf519517a533151f9412279863c1054ab7f46e8ea24147c0ecb3e12a327d&" alt="Logo">
       <div class="logo-text">pillow talk</div>
     </div>
-    <div class="nav-links">
-      <a href="page1.html">enter text here</a>
-      <a href="page2.html">enter text here</a>
-    </div>
+    <a href="https://discord.gg/WkgmkXbWVJ" class="discord-button">Discord</a>
   </div>
 
-  <!-- Welcome text -->
-  <div class="welcome">Welcome!</div>
-
-  <!-- Scrollable space -->
-  <div class="spacer"></div>
-
-  <!-- Video section -->
-  <div class="video-section">
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
-    </div>
-    <div class="below-text">enter text here</div>
+  <div class="welcome">
+    Welcome to the Homepage!
   </div>
+
+  <div class="below-text">
+    ENTER TEXT HERE
+  </div>
+
+  <!-- Go Back Button -->
+  <a href="index.html" class="go-back-btn">Go Back</a>
 
 </body>
 </html>
