@@ -2,155 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Web Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noclip VR</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
       font-family: Arial, sans-serif;
-      background-image: url('https://cdn.discordapp.com/attachments/1333214925253906445/1366924141923668048/360_F_366593980_vtwrIhBMTRUTAzn2SEKDEFNSMAEeoBOZ.png?ex=6812b6cf&is=6811654f&hm=8a25153534461fa244c215f49695c6f2feca2455eba78615ce3f7536404e8aa6&');
+      background: url('https://img.freepik.com/premium-photo/abstract-circular-red-background_8466-2.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
       color: white;
+      overflow-x: hidden;
     }
-
-    .top-bar {
+    header {
       position: fixed;
       top: 0;
-      left: 0;
       width: 100%;
-      height: 70px;
-      background-color: #d8b4f8;
+      background-color: black;
+      padding: 10px 0;
+      z-index: 1000;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 40px;
-      z-index: 1000;
+      padding: 0 20px;
     }
-
-    .logo-section {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: red;
     }
-
-    .logo-section img {
-      height: 50px;
-      border-radius: 8px;
-    }
-
-    .logo-text {
+    header h2 {
+      margin: 0;
+      font-size: 24px;
       color: white;
-      font-size: 22px;
-      font-weight: bold;
     }
-
-    .nav-links {
+    nav {
       display: flex;
-      gap: 20px;
-      margin-right: 100px;
+      width: 200px;
+      justify-content: flex-start;
+      margin-right: 20px;
     }
-
-    .nav-links a {
+    nav a {
       color: white;
-      font-size: 16px;
       text-decoration: none;
+      padding: 10px 20px;
+      background-color: black;
+      margin: 0;
+      border-radius: 5px;
       font-weight: bold;
-    }
-
-    .welcome {
-      font-size: 160px;
+      display: block;
       text-align: center;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+    }
+    nav a:hover {
+      background-color: red;
+    }
+    .content {
+      padding: 120px 20px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px black;
+    }
+    .content h1 span {
+      color: red;
+    }
+    .content h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
       color: black;
-      text-shadow: 4px 4px 10px white;
     }
-
-    .spacer {
-      height: 150vh;
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
     }
-
-    .video-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 50px;
-    }
-
-    .video-container {
-      width: 80%;
-      max-width: 800px;
-    }
-
-    iframe {
+    .content img {
       width: 100%;
-      height: 450px;
-      border: none;
+      max-width: 500px;
+      margin: 20px 0;
+      border-radius: 10px;
     }
-
-    .below-text {
-      margin-top: 20px;
-      font-size: 22px;
-      text-shadow: 1px 1px 4px black;
+    .content video {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px 0;
+      border-radius: 10px;
     }
-
-    /* Discord icon at bottom */
-    .discord-footer {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .discord-footer img {
-      width: 40px;
-      height: auto;
+    .discord-icon {
+      position: absolute;
+      left: -120px;  /* Moves the icon to the left of the image */
+      top: 50%;  /* Vertically center it next to the image */
+      width: 80px;  /* Adjust the size */
       cursor: pointer;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s;
     }
-
-    .discord-footer img:hover {
-      transform: scale(1.1);
+    .discord-icon:hover {
+      transform: scale(1.1);  /* Slightly enlarge on hover */
     }
   </style>
 </head>
 <body>
-
-  <!-- Top bar -->
-  <div class="top-bar">
-    <div class="logo-section">
-      <img src="https://cdn.discordapp.com/attachments/1333214925253906445/1366927727877165206/IMG_1479.png?ex=6812ba26&is=681168a6&hm=ff31bf519517a533151f9412279863c1054ab7f46e8ea24147c0ecb3e12a327d&" alt="Logo">
-      <div class="logo-text">pillow talk</div>
+  <header>
+    <div>
+      <h1>NOCLIP</h1><h2>VR</h2>
     </div>
-    <div class="nav-links">
-      <a href="page1.html">enter text here</a>
-      <a href="page2.html">enter text here</a>
-    </div>
-  </div>
+    <nav>
+      <a href="staff.html">Staff</a>
+      <a href="levels.html">Levels</a>
+    </nav>
+  </header>
 
-  <!-- Welcome text -->
-  <div class="welcome">Welcome!</div>
+  <div class="content">
+    <h1><span>NOCLIP</span> VR</h1>
+    
+    <!-- Video in the Center -->
+    <video controls>
+      <source src="https://video.fgla3-2.fna.fbcdn.net/o1/v/t2/f2/m69/AQPTfQKWvryiee4VrBi3c2Ddmr7d0ReZyFrZfNpJVEH2ACdK4ORWlFN2q0BkiPp2qVn7QUMuvODslDpeS581w7GN.mp4?strext=1&_nc_cat=107&_nc_oc=AdmoKm-_GSO7cq0XsAAM_ZX1vw02-Dp2ZOY4OLcya3XcausV5H-28LabKWFr4XQNeik&_nc_sid=8bf8fe&_nc_ht=video.fgla3-2.fna.fbcdn.net&_nc_ohc=w2GnmAWkhAMQ7kNvwG5xXfc&efg=eyJ2ZW5jb2xlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNjQwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NTcyNzYyMDQxODcxMzE2LCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6NTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_zt=28&oh=00_AfEsxYiDKlU5IQaY9EhBYvx0GK9PZCfLX4fxVE5cF0Qsvw&oe=68185A6F" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-  <!-- Scrollable space -->
-  <div class="spacer"></div>
-
-  <!-- Video section -->
-  <div class="video-section">
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/4bxnYLRYEx0?si=4Zn-dHL3MvjKjyep" allowfullscreen></iframe>
-    </div>
-    <div class="below-text">enter text here</div>
-  </div>
-
-  <!-- Discord icon link at bottom -->
-  <div class="discord-footer">
-    <a href="https://discord.gg/WkgmkXbWVJ" target="_blank">
-      <img src="https://static.vecteezy.com/system/resources/previews/018/930/604/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord">
+    <!-- Discord logo beside the image -->
+    <a href="https://discord.gg/noclipvr" target="_blank">
+      <img class="discord-icon" src="https://static.vecteezy.com/system/resources/previews/018/930/604/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Logo">
     </a>
-  </div>
 
+    <!-- "A Multiplayer Horror Experience" below the video -->
+    <h2>A Multiplayer Horror Experience</h2>
+
+    <!-- Game Description -->
+    <img src="https://media.discordapp.net/attachments/1284740231941066825/1367233293027643596/image.png?ex=6813d6bb&is=6812853b&hm=050eb7416f4f07a5a2a350961069d9e32591ba0a27c1d4e6c8a93634f0bd038b&=&format=webp&quality=lossless" alt="Noclip VR Game Screenshot">
+    <p>
+      Noclip VR is a multiplayer horror game with unique locomotion and proximity chat! The game features many unique levels with different puzzles and entities.
+      <br><br>
+      Invite your friends and noclip out of the frontrooms now!
+      <br><br>
+      "If you're not careful and noclip out of reality in the wrong areas, you'll end up in the Backrooms, where it's nothing but the stink of old moist carpet, the madness of mono-yellow, the endless background noise of fluorescent lights at maximum hum-buzz, and approximately six hundred million square miles of randomly segmented empty rooms to be trapped in.
+      <br><br>
+      God save you if you hear something wandering around nearby, because it sure as hell has heard you."
+    </p>
+  </div>
 </body>
 </html>
